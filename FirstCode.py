@@ -25,17 +25,19 @@ Electricity_cost = float(input("Please enter the amount of your bill with all ta
 print("Total business activity hours for the billing period ")
 Total_business_activity_hours = float(input("please enter the amount of business hours of activity : "))
 
-cost_by_hour = Electricity_cost/Total_business_activity_hours
-print("Hourly electricity cost is {cost_by_hour} Euros")
+Cost_by_hour = Electricity_cost/Total_business_activity_hours
+print("Hourly electricity cost is {Cost_by_hour} Euros")
 
 #Hours conversion in minute :
-cost_by_minute = cost_by_hour / 60
-print(f"Cost of electricity by minute : {cost_by_minute} Euros")
+Cost_by_minute = Cost_by_hour / 60
+print(f"Cost of electricity by minute : {Cost_by_minute} Euros")
 
 #lets calculate the electricity cost by palette : 
 print("Electricity cost by pallet : ")
 Time_needed_to_build_a_pallet = float(input("please enter the amount of minutes needed to build a pallet : "))
 
-Total_electricity_cost_by_pallet = cost_by_minute * Time_needed_to_build_a_pallet
-print(f"Total electricity cost for by pallet is {Total_electricity_cost_by_pallet} Euros")
+Total_electricity_cost_by_pallet = Cost_by_minute * Time_needed_to_build_a_pallet
+print(f"Total electricity cost by pallet is {Total_electricity_cost_by_pallet} Euros")
 
+Total_of_electricity_and_raw_material_cost_by_pallet = Total_electricity_cost_by_pallet + Raw_material_total_cost
+print(f"Total electricity cost and raw material cost by pallet {Total_of_electricity_and_raw_material_cost_by_pallet} Euros ")
