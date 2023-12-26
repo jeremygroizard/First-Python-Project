@@ -32,7 +32,7 @@ print("Hourly electricity cost is {Cost_by_hour} Euros")
 Cost_by_minute = Cost_by_hour / 60
 print(f"Cost of electricity by minute : {Cost_by_minute} Euros")
 
-#lets calculate the electricity cost by palette : 
+#lets calculate the electricity cost by pallet : 
 print("Electricity cost by pallet : ")
 Time_needed_to_build_a_pallet = float(input("please enter the amount of minutes needed to build a pallet : "))
 
@@ -41,3 +41,5 @@ print(f"Total electricity cost by pallet is {Total_electricity_cost_by_pallet} E
 
 Total_of_electricity_and_raw_material_cost_by_pallet = Total_electricity_cost_by_pallet + Raw_material_total_cost
 print(f"Total electricity cost and raw material cost by pallet {Total_of_electricity_and_raw_material_cost_by_pallet} Euros ")
+
+#labour cost by pallet :
