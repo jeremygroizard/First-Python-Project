@@ -2,11 +2,23 @@ print("EPAL wood pallet cost calculator")
 print("For pallet made from pine maritime wood")
 
 print("0,17 m3 of maritime pine wood is needed")
-Maritime_pine_wood_price = float(input("Please enter the current market price of 1 m3 maritime pine wood"))
+Maritime_pine_wood_min_price = 10.0
+Maritime_pine_wood_max_price = 70.0
+
+while True :
+    try:
+        Maritime_pine_wood_price = float(input("Please enter the current market price of 1 m3 maritime pine wood"))
+        if Maritime_pine_wood_min_price <= Maritime_pine_wood_price <= Maritime_pine_wood_max_price:
+            break # Exit the loop if the input is within the valid range
+        else :
+            print(f"The price must be between {Maritime_pine_wood_min_price} and {Maritime_pine_wood_max_price} Please try again. ")
+    except ValueError:
+        print("Please enter a valid number.")
+
 Pallet_wood_volume = 0.17
 
 Total_wood_price = Maritime_pine_wood_price * Pallet_wood_volume
-print(f"Total wood price is {Total_wood_price} Euros")
+print(f"Total wood price is {Total_wood_price} Euros by unit")
 
 print("42 pieces of M5_5x90 threaded nails") 
 M5_5x90_threaded_nails_price = float(input("please enter the price with all taxes included : "))
@@ -42,4 +54,5 @@ print(f"Total electricity cost by pallet is {Total_electricity_cost_by_pallet} E
 Total_of_electricity_and_raw_material_cost_by_pallet = Total_electricity_cost_by_pallet + Raw_material_total_cost
 print(f"Total electricity cost and raw material cost by pallet {Total_of_electricity_and_raw_material_cost_by_pallet} Euros ")
 
-#labour cost by pallet :
+#Now let's calculate the labour cost :
+
