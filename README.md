@@ -3,7 +3,7 @@
 EPAL WOOD PALLET CALCULATOR
 
 OVERVIEW :
-Welcome to the EPAL Wood Pallet Cost Calculator! This Python script is designed to help you estimate the production costs of an EPAL wood pallet made from maritime pine wood. The calculation takes into account the price of maritime pine wood, threaded nails, and other components required for pallet assembly.
+Welcome to the EPAL Wood Pallet Cost Calculator ! This Python script simulation is designed to help you to estimate the production costs of an EPAL wood pallet made from maritime pine wood in France. The calculation takes into account the price of maritime pine wood, threaded nails, and other components required for pallet assembly, and labour cost.
 
 HOW TO USE:
 Run the script: Open the script in a Python environment and execute it.
@@ -14,6 +14,5 @@ FORMULA USED :
 The calculation is based on the volume of maritime pine wood required for one pallet (0.17 m³) and the respective prices of maritime pine wood, M5_5x90 threaded nails, and M5_5x38 threaded nails.
 
 FUTURE ENHANCEMENTS :
-This script is a work in progress. Future updates may include additional features such as:
-Electrical cost, staff cost...
+This script is a work in progress. Future updates may include additional features.
 
