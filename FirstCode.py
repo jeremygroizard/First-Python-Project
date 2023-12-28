@@ -55,7 +55,8 @@ total_of_electricity_and_raw_material_cost_by_pallet = total_electricity_cost_by
 print(f"Total electricity cost and raw material cost by pallet {total_of_electricity_and_raw_material_cost_by_pallet} Euros ")
 
 # Now let's calculate the labour cost on the EPAL production line.
-#let's separate permanent workers and temporary workers with two lists :
+# Let's separate permanent workers and temporary workers with two lists :sß
+# Permanent workers :
 permanent_workers = []
 
 # Let's add workers to this list:
@@ -70,4 +71,21 @@ while True:
 # Print the list of permanent workers
 print("\nPermanent Workers:")
 for worker in permanent_workers:
+    print(worker)
+
+# Temporary workers :
+temporary_workers = []
+
+# Let's add workers to this list:
+while True:
+    worker_name = input("Please enter the name for each worker then 'exit' to quit: ")
+
+    if worker_name.lower() == 'exit':
+        break  # Exit the loop if the input is 'exit'
+
+    temporary_workers_workers.append({'name': worker_name})
+
+# Print the list of temporary workers
+print("\nTemporary Workers:")
+for worker in temporary_workers_workers:
     print(worker)
