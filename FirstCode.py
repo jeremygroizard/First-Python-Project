@@ -85,7 +85,27 @@ while True:
 
     temporary_workers_workers.append({'name': worker_name})
 
-# Print the list of temporary workers
-print("\nTemporary Workers:")
-for worker in temporary_workers_workers:
+# Print the list of temporary workers :
+print("\nTemporary Workers: ")
+for worker in temporary_workers :
     print(worker)
+
+# Permanent workers salary and working hours :
+for worker in permanent_workers:
+    # Request of hourly rate :
+    hourly_rate = float(input(f"Please enter the hourly rate for {worker['name']}: "))
+    worker['hourly_rate'] = hourly_rate  # Dictionnary
+    
+    # Request of worked hours amount :
+    hours_worked = float(input(f"Please enter the worked hours amount for {worker['name']}: "))
+    worker['hours_worked'] = hours_worked  # Dictionnary
+
+# Temporary workers salary and working hours :
+for worker in temporary_workers:
+    # Request of hourly rate :
+    hourly_rate = float(input(f"Please enter the hourly rate for {worker['name']}: "))
+    worker['hourly_rate'] = hourly_rate  # Dictionnary
+    
+    # Request of hourly rate :
+    hours_worked = float(input(f"Please enter the worked hours amount for {worker['name']}: "))
+    worker['hours_worked'] = hours_worked  # Dictionnary
