@@ -110,4 +110,22 @@ for worker in temporary_workers:
     hours_worked = float(input(f"Please enter the worked hours amount for {worker['name']}: "))
     worker['hours_worked'] = hours_worked  # Dictionnary
 
-    
+# Salary for permanent workers :
+
+total_salary_permanent = 0
+for worker in permanent_workers:
+    salary = worker['hourly_rate'] * worker['hours_worked']
+    print(f"Salary for {worker['name']}: {salary} Euros")
+    total_salary_permanent += salary
+
+# Salary for temporary workers :
+
+total_salary_temporary = 0
+for worker in temporary_workers:
+    salary = worker['hourly_rate'] * worker['hours_worked']
+    print(f"Salary for {worker['name']}: {salary} Euros")
+    total_salary_temporary += salary
+
+# Final calculation of salary cost :
+total_salary = total_salary_permanent + total_salary_temporary
+print(f"Masse salariale totale: {total_salary} Euros")
