@@ -90,6 +90,8 @@ print("\nTemporary Workers: ")
 for worker in temporary_workers :
     print(worker)
 
+print("Please enter only gross values regarding salary and hourly rate")
+
 # Permanent workers salary and working hours :
 for worker in permanent_workers:
     # Request of hourly rate :
@@ -126,6 +128,19 @@ for worker in temporary_workers:
     print(f"Salary for {worker['name']}: {salary} Euros")
     total_salary_temporary += salary
 
-# Final calculation of salary cost :
+# Calculation of total gross salary cost :
 total_salary = total_salary_permanent + total_salary_temporary
-print(f"Masse salariale totale: {total_salary} Euros")
+print(f"Total gross salary cost : {total_salary} Euros")
+
+# Calculation of total labour cost :
+social_taxes_percentage = 0.45 
+social_taxes_cost = total_salary * social_taxes_percentage 
+total_labour_cost = total_salary + social_taxes_cost 
+
+
+
+
+
+
+
+
