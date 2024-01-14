@@ -1,4 +1,4 @@
-print("EPAL wood pallet cost calculator")
+print("Welcome to the EPAL wood pallet cost calculator")
 print("For pallet made from pine maritime wood")
 
 print("0,17 m3 of maritime pine wood is needed")
@@ -83,7 +83,7 @@ while True:
     if worker_name.lower() == 'exit':
         break  # Exit the loop if the input is 'exit'
 
-    temporary_workers_workers.append({'name': worker_name})
+    temporary_workers.append({'name': worker_name})
 
 # Print the list of temporary workers :
 print("\nTemporary Workers: ")
@@ -109,3 +109,5 @@ for worker in temporary_workers:
     # Request of hourly rate :
     hours_worked = float(input(f"Please enter the worked hours amount for {worker['name']}: "))
     worker['hours_worked'] = hours_worked  # Dictionnary
+
+    
