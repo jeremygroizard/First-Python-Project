@@ -136,7 +136,17 @@ print(f"Total gross salary cost : {total_salary} Euros")
 social_taxes_percentage = 0.45 
 social_taxes_cost = total_salary * social_taxes_percentage 
 total_labour_cost = total_salary + social_taxes_cost 
+print(f"Total_labour_cost : {total_labour_cost} Euros")
 
+
+total_pallet_produced = float(input("Please enter the amount of EPAL pallet produced :"))
+
+# Calculation of labour cost by pallet : 
+labour_cost_per_pallet = total_labour_cost / total_pallet_produced
+
+# Final calculation of all cost by pallet :
+total_cost_per_pallet = total_of_electricity_and_raw_material_cost_by_pallet  + labour_cost_per_pallet
+print(f"Total_cost_per_pallet : {total_cost_per_pallet} Euros")
 
 
 
